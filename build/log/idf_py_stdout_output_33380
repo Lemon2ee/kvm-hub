@@ -1,0 +1,339 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.4/tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\lemon2ee\Downloads\usb_switch_project\usb_switch_project\build\usb_switch.elf C:\Users\lemon2ee\Downloads\usb_switch_project\usb_switch_project\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:/Espressif/frameworks/esp-idf-v5.5.4/\tools\idf.py' '-p' 'COM4'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Apr  4 2026 23:28:24[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=11ab8h ( 72376) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=00021ae0 vaddr=3fc92e00 size=02f8ch ( 12172) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00024a74 vaddr=40374000 size=0b5a4h ( 46500) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=25464h (152676) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=0005548c vaddr=4037f5a4 size=037c8h ( 14280) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=00058c5c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (150) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (150) boot: Disabling RNG early entropy source...[0m
+[0;32mI (166) cpu_start: Multicore app[0m
+D (166) cpu_start: Pro cpu up
+D (166) cpu_start: Starting app cpu, entry point is 0x4037524c
+D (0) cpu_start: App cpu up
+D (174) clk: RTC_SLOW_CLK calibration value: 3354611
+[0;32mI (184) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+D (185) cpu_start: calling init function: 0x42002128 on core: 0
+D (185) cpu_start: calling init function: 0x4200226c on core: 0
+[0;32mI (190) cpu_start: Pro cpu start user code[0m
+[0;32mI (194) cpu_start: cpu freq: 160000000 Hz[0m
+D (198) cpu_start: calling init function: 0x42002058 on core: 0
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     usb_switch[0m
+[0;32mI (211) app_init: App version:      1[0m
+[0;32mI (215) app_init: Compile time:     Apr  4 2026 23:28:17[0m
+[0;32mI (220) app_init: ELF file SHA256:  9ff273983...[0m
+[0;32mI (224) app_init: ESP-IDF:          v5.5.4[0m
+D (228) cpu_start: calling init function: 0x4200213c on core: 0
+[0;32mI (234) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (241) efuse_init: Chip rev:         v0.2[0m
+D (245) cpu_start: calling init function: 0x42003c90 on core: 0
+D (251) memory_layout: Checking 6 reserved memory ranges:
+D (256) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc92e00
+D (262) memory_layout: Reserved memory range 0x3fc92e00 - 0x3fc96718
+D (268) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000
+D (274) memory_layout: Reserved memory range 0x40374000 - 0x40382e00
+D (280) memory_layout: Reserved memory range 0x600fe000 - 0x600fe000
+D (286) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000
+D (292) memory_layout: Building list of available memory regions:
+D (298) memory_layout: Available memory region 0x3fc96718 - 0x3fca0000
+D (305) memory_layout: Available memory region 0x3fca0000 - 0x3fcb0000
+D (311) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000
+D (317) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000
+D (323) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000
+D (330) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710
+D (336) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34
+D (342) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000
+D (348) memory_layout: Available memory region 0x600fe000 - 0x600fffe8
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (361) heap_init: New heap initialised at 0x3fc96718
+[0;32mI (366) heap_init: At 3FC96718 len 00052FF8 (331 KiB): RAM[0m
+[0;32mI (371) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (376) heap_init: New heap initialised at 0x3fcf0000
+[0;32mI (381) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (386) heap_init: New heap initialised at 0x600fe000
+[0;32mI (391) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+D (396) cpu_start: calling init function: 0x4200725c on core: 0
+D (402) cpu_start: calling init function: 0x42006d5c on core: 0
+D (407) cpu_start: calling init function: 0x420022b8 on core: 0
+D (413) intr_alloc: Connected src 39 to int 1 (cpu 0)
+D (418) cpu_start: calling init function: 0x420022c8 on core: 0
+D (423) cpu_start: calling init function: 0x42008304 on core: 0
+D (429) cpu_start: calling init function: 0x42009e18 on core: 0
+D (435) cpu_start: calling init function: 0x42008ee4 on core: 0
+D (440) cpu_start: calling init function: 0x42006d68 on core: 0
+D (446) cpu_start: calling init function: 0x420022d4 on core: 0
+D (452) spi_flash: trying chip: issi
+D (455) spi_flash: trying chip: gd
+D (458) spi_flash: trying chip: mxic
+D (461) spi_flash: trying chip: winbond
+D (465) spi_flash: trying chip: boya
+[0;32mI (468) spi_flash: detected chip: boya[0m
+[0;32mI (472) spi_flash: flash io: dio[0m
+[0;33mW (475) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (487) cpu_start: calling init function: 0x420021d8 on core: 0
+D (492) cpu_start: calling init function: 0x4201b29c
+D (497) cpu_start: calling init function: 0x4037936c
+D (502) cpu_start: calling init function: 0x420034c0
+D (507) cpu_start: calling init function: 0x42020b58 on core: 0
+D (512) cpu_start: calling init function: 0x42004b24 on core: 0
+[0;32mI (518) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+D (531) cpu_start: calling init function: 0x42002308 on core: 0
+D (536) cpu_start: calling init function: 0x42002314 on core: 0
+D (542) intr_alloc: Connected src 79 to int 2 (cpu 0)
+D (547) app_start: Starting scheduler on CPU0
+D (551) intr_alloc: Connected src 57 to int 3 (cpu 0)
+D (551) intr_alloc: Connected src 80 to int 0 (cpu 1)
+D (551) app_start: Starting scheduler on CPU1
+D (561) intr_alloc: Connected src 58 to int 1 (cpu 1)
+[0;32mI (551) main_task: Started on CPU0[0m
+D (571) heap_init: New heap initialised at 0x3fce9710
+D (571) intr_alloc: Connected src 52 to int 5 (cpu 0)
+[0;32mI (581) main_task: Calling app_main()[0m
+[0;32mI (581) KVM: [0m
+[0;32mI (581) KVM: ╔══════════════════════════════════════╗[0m
+[0;32mI (591) KVM: ║     ESP32-S3 一键 KVM 切换器         ║[0m
+[0;32mI (601) KVM: ║     A = Windows    B = MacBook        ║[0m
+[0;32mI (601) KVM: ║     OSD 切换自动同步 USB (500ms)      ║[0m
+[0;32mI (611) KVM: ╚══════════════════════════════════════╝[0m
+[0;32mI (621) KVM: [0m
+D (621) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+[0;32mI (631) KVM: GPIO4 (USB SEL) 初始化完成[0m
+D (631) i2c.common: new bus(0) at 0x3fce9db0
+[0;33mW (641) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+D (651) i2c.common: bus clock source frequency: 40000000hz
+D (661) intr_alloc: Connected src 42 to int 8 (cpu 0)
+[0;32mI (661) KVM: I2C 初始化完成 — SCL=GPIO18, SDA=GPIO47, 频率=50000Hz[0m
+D (671) intr_alloc: Connected src 38 to int 9 (cpu 0)
+D (681) EXT_PORT: Driver installed
+D (681) EXT_HUB: Driver installed
+D (681) HCD DWC: FIFO config lines: RX=104, PTX=32, NPTX=64
+[0;32mI (721) KVM: USB Host 库已安装[0m
+[0;32mI (721) KVM: USB Host 事件处理任务已启动[0m
+D (721) hid-host: USB HID handling start
+D (721) hid-host: USB HID handling
+[0;32mI (721) KVM: HID Host 驱动已安装[0m
+[0;32mI (721) KVM: [0m
+[0;32mI (721) KVM: 输入源监控任务已启动 (每 500ms 轮询)[0m
+[0;32mI (721) KVM: 当前状态: Windows (默认)[0m
+[0;32mI (731) KVM: 等待键盘连接...[0m
+[0;32mI (741) main_task: Returned from app_main()[0m
+D (1031) HUB: Root port reset
+D (1031) HUB: Device tree node (uid=1): new
+D (1031) ENUM: [0:0] Start processing, device address 0
+D (1031) ENUM: [0:0] GET_SHORT_DEV_DESC OK
+D (1031) USBH: Processing actions 0x4
+D (1031) USBH: Default pipe device 0
+D (1041) ENUM: [0:0] CHECK_SHORT_DEV_DESC OK
+D (1101) ENUM: [0:0] SECOND_RESET OK
+D (1101) ENUM: [0:0] SECOND_RESET_COMPLETE OK
+D (1101) ENUM: [0:0] SET_ADDR OK
+D (1101) USBH: Processing actions 0x4
+D (1101) USBH: Default pipe device 0
+D (1101) ENUM: Assign address (dev_addr=1)
+D (1101) ENUM: [0:0] CHECK_ADDR OK
+D (1121) ENUM: [0:0] SET_ADDR_RECOVERY OK
+D (1121) ENUM: [0:0] GET_FULL_DEV_DESC OK
+D (1121) USBH: Processing actions 0x4
+D (1121) USBH: Default pipe device 1
+D (1121) ENUM: [0:0] CHECK_FULL_DEV_DESC OK
+D (1131) ENUM: Selected bConfigurationValue=1
+D (1131) ENUM: [0:0] SELECT_CONFIG OK
+D (1131) ENUM: [0:0] GET_SHORT_CONFIG_DESC OK
+D (1141) USBH: Processing actions 0x4
+D (1141) USBH: Default pipe device 1
+D (1141) ENUM: [0:0] CHECK_SHORT_CONFIG_DESC OK
+D (1151) ENUM: [0:0] GET_FULL_CONFIG_DESC OK
+D (1151) USBH: Processing actions 0x4
+D (1161) USBH: Default pipe device 1
+D (1161) ENUM: [0:0] CHECK_FULL_CONFIG_DESC OK
+D (1161) ENUM: [0:0] GET_SHORT_LANGID_TABLE OK
+D (1171) USBH: Processing actions 0x4
+D (1171) USBH: Default pipe device 1
+D (1171) ENUM: [0:0] CHECK_SHORT_LANGID_TABLE OK
+D (1181) ENUM: [0:0] GET_FULL_LANGID_TABLE OK
+D (1181) USBH: Processing actions 0x4
+D (1191) USBH: Default pipe device 1
+D (1191) ENUM: [0:0] CHECK_FULL_LANGID_TABLE OK
+D (1191) ENUM: [0:0] GET_SHORT_MANU_STR_DESC OK
+D (1201) USBH: Processing actions 0x4
+D (1201) USBH: Default pipe device 1
+D (1201) ENUM: [0:0] CHECK_SHORT_MANU_STR_DESC OK
+D (1211) ENUM: [0:0] GET_FULL_MANU_STR_DESC OK
+D (1211) USBH: Processing actions 0x4
+D (1221) USBH: Default pipe device 1
+D (1221) ENUM: [0:0] CHECK_FULL_MANU_STR_DESC OK
+D (1221) ENUM: [0:0] GET_SHORT_PROD_STR_DESC OK
+D (1231) USBH: Processing actions 0x4
+D (1231) USBH: Default pipe device 1
+D (1241) ENUM: [0:0] CHECK_SHORT_PROD_STR_DESC OK
+D (1241) ENUM: [0:0] GET_FULL_PROD_STR_DESC OK
+D (1241) USBH: Processing actions 0x4
+D (1251) USBH: Default pipe device 1
+D (1251) ENUM: [0:0] CHECK_FULL_PROD_STR_DESC OK
+D (1251) ENUM: [0:0] GET_SHORT_SER_STR_DESC OK
+D (1261) USBH: Processing actions 0x4
+D (1261) USBH: Default pipe device 1
+D (1271) ENUM: [0:0] CHECK_SHORT_SER_STR_DESC OK
+D (1271) ENUM: [0:0] GET_FULL_SER_STR_DESC OK
+D (1271) USBH: Processing actions 0x4
+D (1281) USBH: Default pipe device 1
+D (1281) ENUM: [0:0] CHECK_FULL_SER_STR_DESC OK
+D (1291) ENUM: [0:0] SET_CONFIG OK
+D (1291) USBH: Processing actions 0x4
+D (1291) USBH: Default pipe device 1
+D (1291) ENUM: [0:0] CHECK_CONFIG OK
+D (1301) ENUM: [0:0] Processing complete, new device address 1
+D (1301) ENUM: [0:0] COMPLETE OK
+D (1311) USBH: Processing actions 0x40
+D (1311) USBH: New device 1
+D (1311) hid-host: New device connected
+D (1321) hid-host: Found HID, bInterfaceNumber=0
+D (1321) hid-host: Found HID, bInterfaceNumber=2
+D (1321) hid-host: Found HID, bInterfaceNumber=1
+[0;32mI (1331) KVM: 键盘已连接![0m
+[0;32mI (1331) KVM: 键盘已连接![0m
+[0;32mI (1331) KVM: 键盘已连接![0m
+D (1341) hid-host: USB HID handling
+[0;32mI (7161) KVM: ========================================[0m
+[0;32mI (7161) KVM: >> 键盘切换到 MacBook[0m
+[0;32mI (7171) KVM:    LG 显示器: → DP1 ✓[0m
+[0;32mI (7171) KVM:    USB 外设:  → MacBook ✓[0m
+[0;32mI (7171) KVM: ========================================[0m
+D (7171) hid-host: USB HID handling
+D (7231) hid-host: USB HID handling
+[0;33mW (11731) KVM: DDC 读取连续失败 10 次，检查 I2C 连接[0m
+[0;32mI (28061) KVM: ========================================[0m
+[0;32mI (28061) KVM: >> 键盘切换到 Windows[0m
+[0;32mI (28061) KVM:    LG 显示器: → HDMI1 ✓[0m
+[0;32mI (28061) KVM:    USB 外设:  → Windows ✓[0m
+[0;32mI (28071) KVM: ========================================[0m
+D (28071) hid-host: USB HID handling
+D (28131) hid-host: USB HID handling
+[0;32mI (42901) KVM: ========================================[0m
+[0;32mI (42901) KVM: >> 键盘切换到 MacBook[0m
+[0;32mI (42901) KVM:    LG 显示器: → DP1 ✓[0m
+[0;32mI (42901) KVM:    USB 外设:  → MacBook ✓[0m
+[0;32mI (42911) KVM: ========================================[0m
+D (42911) hid-host: USB HID handling
+D (42991) hid-host: USB HID handling
+[0;32mI (180711) KVM: ========================================[0m
+[0;32mI (180711) KVM: >> 键盘切换到 Windows[0m
+[0;32mI (180711) KVM:    LG 显示器: → HDMI1 ✓[0m
+[0;32mI (180711) KVM:    USB 外设:  → Windows ✓[0m
+[0;32mI (180721) KVM: ========================================[0m
+D (180721) hid-host: USB HID handling
+D (180811) hid-host: USB HID handling
+[0;32mI (192221) KVM: ========================================[0m
+[0;32mI (192221) KVM: >> 键盘切换到 MacBook[0m
+[0;32mI (192231) KVM:    LG 显示器: → DP1 ✓[0m
+[0;32mI (192231) KVM:    USB 外设:  → MacBook ✓[0m
+[0;32mI (192231) KVM: ========================================[0m
+D (192231) hid-host: USB HID handling
+D (192311) hid-host: USB HID handling
+[0;32mI (194321) KVM: ========================================[0m
+[0;32mI (194321) KVM: >> 键盘切换到 Windows[0m
+[0;32mI (194321) KVM:    LG 显示器: → HDMI1 ✓[0m
+[0;32mI (194321) KVM:    USB 外设:  → Windows ✓[0m
+[0;32mI (194331) KVM: ========================================[0m
+D (194331) hid-host: USB HID handling
+D (194421) hid-host: USB HID handling
+[0;32mI (195801) KVM: ========================================[0m
+[0;32mI (195801) KVM: >> 键盘切换到 MacBook[0m
+[0;32mI (195801) KVM:    LG 显示器: → DP1 ✓[0m
+[0;32mI (195801) KVM:    USB 外设:  → MacBook ✓[0m
+[0;32mI (195811) KVM: ========================================[0m
+D (195811) hid-host: USB HID handling
+D (195921) hid-host: USB HID handling
+[0;32mI (197181) KVM: ========================================[0m
+[0;32mI (197181) KVM: >> 键盘切换到 Windows[0m
+[0;32mI (197191) KVM:    LG 显示器: → HDMI1 ✓[0m
+[0;32mI (197191) KVM:    USB 外设:  → Windows ✓[0m
+[0;32mI (197191) KVM: ========================================[0m
+D (197191) hid-host: USB HID handling
+D (197301) hid-host: USB HID handling
+[0;32mI (198471) KVM: ========================================[0m
+[0;32mI (198471) KVM: >> 键盘切换到 MacBook[0m
+[0;32mI (198471) KVM:    LG 显示器: → DP1 ✓[0m
+[0;32mI (198471) KVM:    USB 外设:  → MacBook ✓[0m
+[0;32mI (198481) KVM: ========================================[0m
+D (198481) hid-host: USB HID handling
+D (198581) hid-host: USB HID handling
+[0;32mI (199961) KVM: ========================================[0m
+[0;32mI (199961) KVM: >> 键盘切换到 Windows[0m
+[0;32mI (199961) KVM:    LG 显示器: → HDMI1 ✓[0m
+[0;32mI (199961) KVM:    USB 外设:  → Windows ✓[0m
+[0;32mI (199971) KVM: ========================================[0m
+D (199971) hid-host: USB HID handling
+D (200081) hid-host: USB HID handling
+[0;32mI (201141) KVM: ========================================[0m
+[0;32mI (201141) KVM: >> 键盘切换到 MacBook[0m
+[0;32mI (201151) KVM:    LG 显示器: → DP1 ✓[0m
+[0;32mI (201151) KVM:    USB 外设:  → MacBook ✓[0m
+[0;32mI (201151) KVM: ========================================[0m
+D (201151) hid-host: USB HID handling
+D (201261) hid-host: USB HID handling
+[0;32mI (202541) KVM: ========================================[0m
+[0;32mI (202541) KVM: >> 键盘切换到 Windows[0m
+[0;32mI (202551) KVM:    LG 显示器: → HDMI1 ✓[0m
+[0;32mI (202551) KVM:    USB 外设:  → Windows ✓[0m
+[0;32mI (202551) KVM: ========================================[0m
+D (202551) hid-host: USB HID handling
+D (202641) hid-host: USB HID handling
+D (248691) HUB: Device tree node (uid=1): device gone
+D (248691) USBH: Processing actions 0x17
+D (248691) hid-host: USB HID handling
+D (248691) hid-host: USB HID handling
+D (248691) hid-host: USB HID handling
+D (248691) USBH: Default pipe device 1
+D (248701) USBH: Device 1 gone
+D (248701) EXT_HUB: No device with address 1 was found
+D (248711) hid-host: Device suddenly disconnected
+D (248711) hid-host: Close addr 1, iface 0, state 3
+[1;31mE (248711) USB HOST: EP command error: ESP_ERR_INVALID_STATE[0m
+[0;33mW (248721) KVM: 键盘已断开[0m
+D (248721) hid-host: Close addr 1, iface 0, state 4
+D (248731) hid-host: Remove addr 1, iface 0 from list
+D (248731) hid-host: Close addr 1, iface 2, state 3
+[1;31mE (248741) USB HOST: EP command error: ESP_ERR_INVALID_STATE[0m
+[0;33mW (248741) KVM: 键盘已断开[0m
+D (248751) hid-host: Close addr 1, iface 2, state 4
+D (248751) hid-host: Remove addr 1, iface 2 from list
+D (248751) hid-host: Close addr 1, iface 1, state 3
+[1;31mE (248761) USB HOST: EP command error: ESP_ERR_INVALID_STATE[0m
+[0;33mW (248761) KVM: 键盘已断开[0m
+D (248771) hid-host: Close addr 1, iface 1, state 4
+D (248771) hid-host: Remove addr 1, iface 1 from list
+D (248781) hid-host: Remove addr 1 device from list
+D (248781) hid-host: USB HID handling
+D (248781) USBH: Processing actions 0x20
+D (248791) USBH: Freeing device 1
+D (248791) HUB: Device tree node (uid=1): freeing
+D (248801) USBH: Device all free
+D (248801) HUB: Recovering root port
