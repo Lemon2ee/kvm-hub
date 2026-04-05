@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.ti.com)",
+      "WebFetch(domain:www.mouser.com)",
+      "WebFetch(domain:www.alldatasheet.com)",
+      "WebFetch(domain:www.datasheetdir.com)",
+      "WebFetch(domain:static.chipdip.ru)",
+      "WebFetch(domain:media.digikey.com)",
+      "WebFetch(domain:datasheet.lcsc.com)",
+      "WebFetch(domain:www.lcsc.com)",
+      "WebFetch(domain:cdn.sparkfun.com)",
+      "WebFetch(domain:lcsc.com)",
+      "WebFetch(domain:jlcpcb.com)",
+      "WebFetch(domain:easyeda.com)",
+      "Bash(mkdir -p hardware)",
+      "Bash(python tools/generate_schematic.py)",
+      "Bash(sort -t'\"' -k2)",
+      "Bash(zip kvm_switch_kicad.zip kvm_switch.kicad_pro kvm_switch.kicad_sch kvm_switch.kicad_pcb)",
+      "Bash(python -c ':*)",
+      "Bash(python \"c:\\\\Users\\\\lemon2ee\\\\Downloads\\\\usb_switch_project\\\\usb_switch_project\\\\tools\\\\zip_kicad.py\")"
+    ]
+  }
+}
